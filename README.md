@@ -7,10 +7,10 @@ gem install harvesterreporter
 
 
 To use-
+
 1. Create a hash with the following information about Harvester-
    * crawler_manager_url: The URL of the Harvester instance
    * selector_id: The corresponding selector on Harvester (if any)
-
 If no hash is provided, results will be saved in an array and output as JSON
 at the end of the crawler's run.
 
