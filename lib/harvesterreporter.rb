@@ -31,7 +31,7 @@ class HarvesterReporter
     curl_url = @cm_url+"/relay_results"
     c = Curl::Easy.http_post(curl_url,
                              Curl::PostField.content('selector_id', @selector_id),
-                             Curl::PostField.content('status_message', "Collected " + link),
+                             Curl::PostField.content('status_message', "Collected " + link.to_s),
                              Curl::PostField.content('results', JSON.pretty_generate(results)))
   end
 
